@@ -2,7 +2,8 @@ import React from 'react'
 import styled,{keyframes} from 'styled-components'
 import {mobile} from '../responsive';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import BoopButton from '../components/Playsound'
+import BoopButton from '../components/Playsound';
+
 
 const Container=styled.div`
   height:100vh;
@@ -27,16 +28,16 @@ const cursor=keyframes`50%{border-color:transparent}`
 
 const TItle=styled.h1`
     display:inline-block;
-    font-size:70px;
+    font-size:60px;
     margin-bottom:20px;
     letter-spacing:6px;
     border-right: 3px solid;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: ${typing} 9s steps(13), 
+    animation: ${typing} 2s steps(30), 
               ${cursor} .4s step-end infinite alternate;   
-    ${mobile({ margin: 0, fontSize:"23px", })} 
+    ${mobile({ margin: 0, fontSize:"13px", })} 
 
 `
 
@@ -79,12 +80,14 @@ const Newsletter = () => {
   return (
     <Container>
       <Info>
-      <TItle>Vawe is coming....</TItle>
+      <TItle>Heat Vawe is coming</TItle>
         <Decs>Get Notified!!</Decs>
-          <InputContainer>
-            <Input placeholder='Your email'/>   
+          {/* <InputContainer> */}
+          {/* <form action='post' > */}
+            {/* <Input placeholder='Your email'/>    */}
             <BoopButton/>
-          </InputContainer>
+          {/* </form> */}
+          {/* </InputContainer> */}
           <Button><Insta href="https://www.instagram.com/heat_vawe/" style={{ color:"White"}}><InstagramIcon/></Insta></Button>
       </Info>
     </Container>
