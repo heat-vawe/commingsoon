@@ -47,25 +47,8 @@ const Decs=styled.div`
   margin-bottom: 20px;
   ${mobile({ textAlign: "Left",fontSize:"18px"})}
 
-    `
-const InputContainer=styled.div`
-    width:50%;
-    height:40px;
-    background-color:white;
-    display:flex;
-    justify-content:space-between;  
-    border:1px solid lightgray;
-    margin-bottom:20px;
-    ${mobile({ width: "10%"})}
+    `    
 
-`
-const Input=styled.input`
-    border:none;
-    flex:8;
-    padding-left:20px;
-    
-
-    `
 const Button=styled.button`
     flex:1;
     border:none;
