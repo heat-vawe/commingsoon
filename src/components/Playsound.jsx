@@ -53,7 +53,7 @@ const BoopButton = () => {
     if (input){
       console.log(input)
       
-      const docRef = await addDoc(collection(db, "commingEmails"), {
+      await addDoc(collection(db, "commingEmails"), {
         email:input,
       }).then([play]);
       setInput("");
